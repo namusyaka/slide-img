@@ -11,7 +11,6 @@ onload = function() {
   },
   path = length = filename = "",
   s = false,
-  i = Number(filename),
   
   zero = function(n) {
     var r = n, l = length - String(r).length;

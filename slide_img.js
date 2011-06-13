@@ -3,8 +3,6 @@ onload = function() {
   $ = function(id) {
     return d.getElementById(id);
   },
-
-  target = $('slide_image'),
   config = {
     width : $('img_width'),
     height : $('img_height')

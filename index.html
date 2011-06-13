@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>画像をスライドさせて楽しむツール</title>
+<style type="text/css">
+#content_display {
+	list-style-type: none;
+}
+#content_display li {
+	float: left
+}
+p {
+	clear: both
+}
+</style>
+<script type="text/javascript" src="./slide_img.js"></script>
+</head>
+<body>
+  <h1>画像をスライドさせて楽しむツール</h1>
+  <p>001~010のように数値がインクリメントされていくような画像ファイルをスライド的に表示するツール</p>
+  <p>URIにはhttp://example.com/[001].jpgのようにファイル名の数値部分を[]で囲んだ文字列を入力してくらさい</p>
+  <ul id="control">
+	<li>URI:<input id="uri" value="">
+	<li>横 : <input id="img_width" value="">
+	<li>縦 : <input id="img_height" value="">
+    <li><button id="set">セット</button>
+  </ul>
+<ul id="content_display">
+    <li><button id="prev">前</button>
+    <li id="slide">
+    <li><button id="next">次</button>
+</ul>
+<p> &copy <a href="../">Namusyaka.info</a>
+</body>
+</html>

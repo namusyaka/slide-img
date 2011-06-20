@@ -11,6 +11,8 @@ onload = function() {
   s = false,
   
   zero = function(n) {
+   //if(!length || length <= n)
+	//  return r;
     var r = n, l = length - String(r).length;
     while(l--)
       r = '0' + r;
@@ -31,6 +33,8 @@ onload = function() {
     filename = path.substring(path.indexOf('[') + 1, path.indexOf(']')),
     length = filename.length;
     if(!$('img_slide')) {
+	  if(!new RegExp("\[[0-9]+\]").test(filename))
+	    return alert("[]でかこんでくらさい");
       s = true;
       var img = d.createElement('img');
 	  setAttr(img, {
